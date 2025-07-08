@@ -1,10 +1,17 @@
 import { Button } from '@/components/ui/button';
+import { Input } from '@/components/ui/input';
 
 export default function Home() {
   return (
-    <div>
-      <p className="text-red-500 font-semibold">Hafiz</p>
-      <Button>Hello world</Button>
+    <div className="">
+      <Input />
+      <Button variant="primary">Primary</Button>
+      <Button variant="secondary">Secondary</Button>
+      <Button variant="ghost">Ghost</Button>
+      <Button variant="outline">Outline</Button>
+      <Button variant="muted">Link</Button>
+      <Button variant="destructive">Destructive</Button>
+      <Button variant="territory">Territory</Button>
     </div>
   );
 }
