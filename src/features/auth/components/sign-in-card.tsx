@@ -1,7 +1,6 @@
 'use client';
 import { z } from 'zod';
-import { FcGoogle } from 'react-icons/fc';
-import { FaGithub } from 'react-icons/fa';
+
 import { useForm } from 'react-hook-form';
 import { zodResolver } from '@hookform/resolvers/zod';
 
@@ -89,34 +88,17 @@ export const SignInCard = () => {
       <div className="px-7">
         <DottedSeparator />
       </div>
-      <CardContent className="p-7 flex flex-col gap-y-4">
-        <Button
-          disabled={isPending}
-          variant="secondary"
-          className="w-full"
-          size="lg"
-        >
-          <FcGoogle className="mr-2 size-5" />
-          Login with Google
-        </Button>
-        <Button
-          disabled={isPending}
-          variant="secondary"
-          className="w-full"
-          size="lg"
-        >
-          <FaGithub className="mr-2 size-5" />
-          Login with Github
-        </Button>
-      </CardContent>
+
       <div className="px-7">
         <DottedSeparator />
       </div>
       <CardContent className="p-7 flex items-center justify-center">
         <p>
           Don&apos;t have an account?{' '}
-          <Link href="/sign-up">
-            <span className="text-blue-700">&nbsp;Sign Up</span>
+          <Link href="mailto:info@acdt-global.org">
+            <span className="text-blue-700">
+              &nbsp;Contact info@acdt-global.org
+            </span>
           </Link>
         </p>
       </CardContent>
