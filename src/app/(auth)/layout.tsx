@@ -18,7 +18,10 @@ const AuthLayout = ({ children }: AuthLayoutProps) => {
           <Image src="/acdt.png" alt="ACDT Logo" width={152} height={56} />
           <div className="flex items-center gap-2">
             <Button variant="secondary">
-              <Link href={pathname === '/sign-in' ? '/sign-up' : '/sign-in'}>
+              <Link
+                //href={pathname === '/sign-in' ? '/sign-up' : '/sign-in'}
+                href="/sign-in"
+              >
                 {pathname === '/sign-in' ? 'Sign Up' : 'Log In'}
               </Link>
             </Button>
